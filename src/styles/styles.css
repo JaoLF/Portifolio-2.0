@@ -2,6 +2,49 @@ body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    background-color: /*#000957*/ white;
+    color: #FFEB00;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    background-color: #344CB7;
+}
+
+.foto-perfil {
+    height: 82px;
+    border: 5px solid red;
+    border-radius: 50px;
+}
+
+.jao {
+    padding-left: 20px;
+}
+
+.links {
+    box-sizing: content-box;
+    /* border: 1px solid green; */
+    margin-right: 125px;
+    font-size: 28px;
+}
+
+
+.link-1 {
+    text-decoration: none;
+    color: white;
+    margin-right: 70px;
+}
+
+.link-2 {
+    text-decoration: none;
+    color: white;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
 }
 
 .container {
@@ -10,32 +53,30 @@ body {
     padding: auto;
     text-align: center;
     margin: 0 auto;
-    
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 
-.titulo {
-    display: flex;
-    justify-content: center;
-}
 
-.texto-informativo {
+.texto-front-end {
     flex-direction: row;
     /* border: 1px solid blue; */
 }
 
-img{
-    height: 120px;
-    /* border: 1px solid green; */
+.button {
+
+}
+
+.sobre-mim {
+
+}
+
+.logo-linkedin {
+    
 }
 
 .projetos {
     margin: 10px;
     font-size: 20px;
     font-size: 15px;
-    border: 1px solid purple;
-}
-
-.portifolio {
-    display: grid;
+    /* border: 1px solid purple; */
 }

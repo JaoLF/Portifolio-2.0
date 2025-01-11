@@ -5,22 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/styles/styles.css">
-    <title>Portifólio do João Luiz</title>
+    <title>Portifólio de João Luiz</title>
 </head>
 
 <body>
     <main>
-        <header>
-            <img src="./src/img/foto perfil 1.jpg" alt="Foto perfil João Luiz">
-            <h1>João Luiz</h1>
-            <div class="header-links">
-                <a href="">Home</a>
-                <a href="">Contato</a>
+        <header class="header">
+            <div>
+                <img class="foto-perfil" src="src/img/Minhas fotos/foto perfil 1.jpg" alt="Foto perfil João Luiz">
+                <h1 class="jao">João Luiz</h1>
             </div>
+            
+            <nav class="links">
+                <a class="link-1" href="">Home</a>
+                <a class="link-2" href="#contatos">Contatos</a>
+            </nav>
         </header>
         <section>
-            <h1 class="titulo">Ei, eu sou o João Luiz</h1>
-            <div class="container">
+            <h1 class="titulo">Olá, me chamo João Luiz</h1>
+            <div class="container">''
                 <div>
                     <h4 class="texto-front-end">Um desenvolvedor front end apaixonado por tecnologia e inovação em criação de sites e aplicações web</h4>
                 </div>
@@ -33,12 +36,17 @@
             </div>
         </section>
     </main>
+    <section class="sobre-mim">
+        <h5>Sobre mim</h5>
+        <p>Tenho 22 anos, moro no Paraná, Brasil. Possuo habilidades medianas em HTML e CSS, básico sobre JavaScript e inciante em testes com Node.js</p>
+        <nav id="contatos">
+            <p><a href="https://www.linkedin.com/in/joao-luiz-francisco/"><img class="logo-linkedin" src="src/img/logos/linkedin/LI-In-Bug.png"></a></p>
+            <p class="email"><img src="./src/img/logos/gmail/logo gmail.png">joaoluizfrancisco2002@gmail.com - </p>
+        </nav>
+
+    </section>
 
     <footer>
-        <section class="about-me">
-            <h5>Sobre mim</h5>
-            <p>Tenho 22 anos, moro no Paraná. Possuo habilidades medianas em HTML e CSS, básico sobre JavaScript e inciante em testes com Node.js</p>
-        </section>
         <p>Inspirado no portifólio de <a href="https://www.rammaheshwari.com/">Ram Maheshwari</a></p>
     </footer>
 </body>
