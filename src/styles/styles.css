@@ -1,9 +1,41 @@
 body {
-    padding: 0; 
+    padding: 0;
     margin: 0;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
-img {
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    padding: auto;
+    text-align: center;
+    margin: 0 auto;
+    
+    /* border: 1px solid red; */
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+}
+
+.texto-informativo {
+    flex-direction: row;
+    /* border: 1px solid blue; */
+}
+
+img{
     height: 120px;
+    /* border: 1px solid green; */
+}
+
+.projetos {
+    margin: 10px;
+    font-size: 20px;
+    font-size: 15px;
+    border: 1px solid purple;
+}
+
+.portifolio {
+    display: grid;
 }
