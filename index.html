@@ -11,44 +11,95 @@
 <body>
     <main>
         <header class="header">
-            <div>
+            <div class="perfil">
                 <img class="foto-perfil" src="src/img/Minhas fotos/foto perfil 1.jpg" alt="Foto perfil João Luiz">
                 <h1 class="jao">João Luiz</h1>
             </div>
-            
+
             <nav class="links">
-                <a class="link-1" href="">Home</a>
-                <a class="link-2" href="#contatos">Contatos</a>
+                <a class="link" href="#contatos">Contato</a>
             </nav>
         </header>
+
         <section>
             <h1 class="titulo">Olá, me chamo João Luiz</h1>
-            <div class="container">''
-                <div>
-                    <h4 class="texto-front-end">Um desenvolvedor front end apaixonado por tecnologia e inovação em criação de sites e aplicações web</h4>
-                </div>
+            <h4 class="texto-front-end">Um desenvolvedor front end apaixonado por tecnologia e inovação em
+                criação de sites e aplicações web
+            </h4>
 
-            </div>
-            <div class="button">
-                <a href="https://github.com/JaoLF?tab=repositories">
-                <button>Projetos</button>
-            </a>
+            <div class="projetos">
+                <p class="lista">
+                    Lista deTarefas
+                    <a href="https://lista-de-tarefas-three-blush.vercel.app/">
+                        <img class="lista-img" src="./src/img/Projetos/Lista de tarefas.jpeg" alt="Lista de Tarefas">
+                    </a>
+                </p>
+
+                <p class="gerador">
+                    <a href="https://gerador-de-senhas-gamma-two.vercel.app/">
+
+                        <img class="gerador-img" src="./src/img/Projetos/Gerador de Senhas.jpeg"
+                            alt="Projeto Gerador de Senhas">
+                    </a><br>
+                    Gerador de Senhas<br>Gerador de senhas simples feito com HTML, CSS e JavaScript.
+                </p>
+
+                <p class="hypercars">
+                    <a href="https://landing-page-two-gules-16.vercel.app/">Hypercars</a>
+                    <img class="hypercars-img" src="./src/img/Projetos/Hypercars.jpeg" alt="Projeto Hypercars">
+                </p>
+
+                <p class="calculadora-de-combustivel">
+                    <a href="https://calculo-de-combustivel.vercel.app/">Calculadora de Combustível</a>
+                    <img class="calculadora-gorjeta-img" src="./src/img/Projetos/Calculo de combustivel.jpeg"
+                        alt="Projeto Calculadora de Combustível">
+                </p>
+
+
             </div>
         </section>
-    </main>
-    <section class="sobre-mim">
-        <h5>Sobre mim</h5>
-        <p>Tenho 22 anos, moro no Paraná, Brasil. Possuo habilidades medianas em HTML e CSS, básico sobre JavaScript e inciante em testes com Node.js</p>
-        <nav id="contatos">
-            <p><a href="https://www.linkedin.com/in/joao-luiz-francisco/"><img class="logo-linkedin" src="src/img/logos/linkedin/LI-In-Bug.png"></a></p>
-            <p class="email"><img src="./src/img/logos/gmail/logo gmail.png">joaoluizfrancisco2002@gmail.com - </p>
-        </nav>
 
-    </section>
+        <section class="sobre-mim">
+            <h5>Sobre mim</h5>
+            <p class="texto sobre-mim">Tenho 22 anos, moro no Paraná, Brasil. Possuo habilidades medianas em HTML e CSS,
+                básico sobre JavaScript e
+                inciante em testes com Node.js</p>
+        </section>
+        <nav id="contatos">
+            <p>
+                <a href="https://www.linkedin.com/in/joao-luiz-francisco/"><img class="logo-linkedin"
+                        src="src/img/logos/linkedin/LI-In-Bug.png"></a>
+
+                <a class="github" href="https://github.com/JaoLF"><img class="logo-github"
+                        src="./src/img/logos/github-mark/github-mark.png" alt="Logo GitHub"></a>
+
+            <p id="email">joaoluizfrancisco2002@gmail.com</p>
+            <button id="copiarEmail">Copiar Email</button>
+            </p>
+        </nav>
+    </main>
 
     <footer>
         <p>Inspirado no portifólio de <a href="https://www.rammaheshwari.com/">Ram Maheshwari</a></p>
     </footer>
+
+    <script>
+        document.getElementById("copiarEmail").addEventListener("click", function () {
+            const email = document.getElementById("email").textContent;
+            const tempInput = document.createElement("textarea");
+            tempInput.value = email;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            try {
+                document.execCommand("copy");
+                alert("Email copiado para a área de transferência!");
+            } catch (err) {
+                console.error("Erro ao copiar o email:", err);
+            }
+            document.body.removeChild(tempInput);
+        });
+    </script>
 </body>
+
 
 </html>
