@@ -17,7 +17,6 @@ body {
     align-items: center;
     justify-content: space-between;
     background-color: #344CB7;
-    /* border: 1px solid purple;      */
 }
 
 .perfil {
@@ -60,7 +59,6 @@ body {
     padding: auto;
     text-align: center;
     margin: 0 auto;
-
 }
 
 .projetos {
@@ -68,45 +66,77 @@ body {
 }
 
 .lista {
+    background-color: #006A67;
+    padding-right: 50px;
+    margin: 0 125px 0 125px;
     display: flex;
+    align-items: center;
+    text-align: center;
 }
 
 .lista-img {
-    width: 504px; 
+    padding-right: 50px;
+    width: 504px;
     height: 298px;
+    display: block;
+    margin: 0 auto;
 }
 
 .gerador {
-    display: flex;
-    text-align: center;
-    align-items: center;
-    margin-left: 125px;
-    margin-right: 125px; 
     background-color: #006A67;
-    padding: 
+    padding-right: 50px;
+    margin: 0 125px 0 125px;
+    display: flex;
+    align-items: center;
+    text-align: center;
 }
 
 .gerador-img {
-    padding-right: 125px; 
+    padding-right: 50px;
     width: 504px;
     height: 298px;
-    
+    display: block;
+    margin: 0 auto;
+}
+
+.hypercars {
+    background-color: #006A67;
+    padding-right: 50px;
+    margin: 0 125px 0 125px;
+    display: flex;
+    align-items: center;
+    text-align: center;
 }
 
 .hypercars-img {
-    width: 50px;
-    height: 50px;
+    padding-right: 50px;
+    width: 504px;
+    height: 298px;
+    display: block;
+    margin: 0 auto;
 }
 
-.calculadora-gorjeta-img {
-    width: 50px;
-    height: 50px;
+.calculadora-de-combustivel {
+    background-color: #006A67;
+    padding-right: 50px;
+    margin: 0 125px 0 125px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.calculadora-combustivel {
+    padding-right: 50px;
+    width: 504px;
+    height: 298px;
+    display: block;
+    margin: 0 auto;
 }
 
 .sobre-mim {
     display: inline;
     justify-content: center;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .logo-linkedin {
