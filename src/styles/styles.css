@@ -4,12 +4,15 @@
     box-sizing: border-box;
 } */
 
+
 body {
+    font-family: "Montserrat", sans-serif;
     background-color: #003161;
-    color: white;
+    color: #FFEB00;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+
 }
 
 .header {
@@ -17,6 +20,8 @@ body {
     align-items: center;
     justify-content: space-between;
     background-color: #344CB7;
+    /* background-image: linear-gradient(to left, #003161, #344CB7); */
+
 }
 
 .perfil {
@@ -38,15 +43,24 @@ body {
 }
 
 .links {
+    /* display: flex; */
+    /* justify-content: space-around; */
     margin-right: 125px;
     font-size: 25px;
     align-items: center;
+    color: #FFEB00;
 }
 
-.link {
+.link, .about{
+    padding: 25px;
     text-decoration: none;
-    color: white;
+    color: #FFEB00;
 }
+
+/* .about {
+    text-decoration: none;
+    color: #FFEB00;
+} */
 
 .titulo {
     display: flex;
@@ -58,7 +72,7 @@ body {
     justify-content: space-evenly;
     padding: auto;
     text-align: center;
-    margin: 0 auto;
+    margin: 50px;
 }
 
 .projetos {
@@ -66,7 +80,8 @@ body {
 }
 
 .lista {
-    background-color: #006A67;
+    background-color: #577BC1;
+    background-image: linear-gradient(to right, #577BC1, #003161);
     padding-right: 50px;
     margin: 0 125px 0 125px;
     display: flex;
@@ -84,7 +99,10 @@ body {
 
 .gerador {
     background-color: #006A67;
-    padding-right: 50px;
+    background-image: linear-gradient(to left, #577BC1, #003161);
+
+    padding-right: 0;
+    padding-left: 50px;
     margin: 0 125px 0 125px;
     display: flex;
     align-items: center;
@@ -92,7 +110,7 @@ body {
 }
 
 .gerador-img {
-    padding-right: 50px;
+    padding-left: 50px;
     width: 504px;
     height: 298px;
     display: block;
@@ -101,6 +119,7 @@ body {
 
 .hypercars {
     background-color: #006A67;
+    background-image: linear-gradient(to right, #577BC1, #003161);
     padding-right: 50px;
     margin: 0 125px 0 125px;
     display: flex;
@@ -118,7 +137,8 @@ body {
 
 .calculadora-de-combustivel {
     background-color: #006A67;
-    padding-right: 50px;
+    background-image: linear-gradient(to left, #577BC1, #003161);
+    padding-right: 0;
     margin: 0 125px 0 125px;
     display: flex;
     align-items: center;
@@ -126,17 +146,34 @@ body {
 }
 
 .calculadora-combustivel {
-    padding-right: 50px;
+    padding-right: 0;
+    padding-left: 50px;
     width: 504px;
     height: 298px;
     display: block;
     margin: 0 auto;
 }
 
+.sobre {
+    display: flex;
+    margin: 75px 80px;
+    
+    align-items: center;
+    justify-content: space-between;
+    padding: 75px;
+    /* text-align: center; */
+    border: 2px solid #FFEB00;
+    border-radius: 16px;
+}
+
 .sobre-mim {
-    display: inline;
-    justify-content: center;
-    /* border: 1px solid red; */
+    text-align: center;
+    padding-right: 60px;
+    /* margin-top: 4%; */
+}
+
+.texto-sobre-mim {
+    /* margin-right: 100px;     */
 }
 
 .logo-linkedin {

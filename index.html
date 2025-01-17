@@ -4,6 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./src/styles/styles.css">
     <title>Portifólio de João Luiz</title>
 </head>
@@ -18,13 +22,17 @@
 
             <nav class="links">
                 <a class="link" href="#contatos">Contato</a>
+                <a class="about" href="#sobre">Sobre</a>
             </nav>
         </header>
 
         <section>
             <h1 class="titulo">Olá, me chamo João Luiz</h1>
-            <h4 class="texto-front-end">Um desenvolvedor front end apaixonado por tecnologia e inovação em
-                criação de sites e aplicações web
+            <h4 class="texto-front-end">
+                Sou apaixonado pelo desenvolvimento front-end, transformando ideias em interfaces interativas e
+                cativantes. Criar designs responsivos e proporcionar experiências agradáveis aos usuários é o que me
+                motiva a evoluir constantemente.Um desenvolvedor front end apaixonado por tecnologia e inovação em
+                criação de sites e aplicações web.
             </h4>
 
             <div class="projetos">
@@ -41,15 +49,15 @@
                 </p>
                 <br>
                 <p class="gerador">
+                    Gerador de Senhas<br>Gerador de senhas simples feito com HTML, CSS e JavaScript.
+                    Neste gerador de senhas aleatório você só escolhe o tamanho da senha e clica em gerar,
+                    e logo em seguida ele te fornece uma senha aleatória com vários caracteres.
+                    É possível também clicar no botão abaixo e copiá-la!
                     <a href="https://gerador-de-senhas-gamma-two.vercel.app/">
 
                         <img src="./src/img/Projetos/Gerador de Senhas.jpeg" alt="Projeto Gerador de Senhas"
                             class="gerador-img">
                     </a>
-                    Gerador de Senhas<br>Gerador de senhas simples feito com HTML, CSS e JavaScript.
-                    Neste gerador de senhas aleatório você só escolhe o tamanho da senha e clica em gerar,
-                    e logo em seguida ele te fornece uma senha aleatória com vários caracteres.
-                    É possível também clicar no botão abaixo e copiá-la!
                 </p>
                 <br>
                 <p class="hypercars">
@@ -63,36 +71,39 @@
                 </p>
                 <br>
                 <p class="calculadora-de-combustivel">
-                    <a href="https://calculo-de-combustivel.vercel.app/">
-                        <img class="calculadora-combustivel" src="./src/img/Projetos/Calculo de combustivel.jpeg"
-                            alt="Projeto Calculadora de Combustível">
-                    </a>
                     Calculadora de Combustível <br> Projeto feito com a instrução do Mini Curso HTML, CSS e JAVASCRIPT
                     do Sujeito Programador.
                     É feito uma calculadora de combustível de gasolina/álccol visando qual compensa mais em termos de
                     custo.
+                    <a href="https://calculo-de-combustivel.vercel.app/">
+                        <img class="calculadora-combustivel" src="./src/img/Projetos/Calculo de combustivel.jpeg"
+                            alt="Projeto Calculadora de Combustível">
+                    </a>
                 </p>
 
 
             </div>
         </section>
 
-        <section class="sobre-mim">
-            <h5>Sobre mim</h5>
-            <p class="texto sobre-mim">Olá! Meu nome é João Luiz, e sou um desenvolvedor web apaixonado por criar
-                soluções modernas e funcionais. Possuo experiência sólida em HTML, CSS e JavaScript, o que me permite
-                construir interfaces intuitivas, responsivas e focadas na experiência do usuário.
-                <br>
-                Atualmente, estou ampliando meus conhecimentos em Node.js, explorando o universo do desenvolvimento
-                back-end para criar aplicações completas e eficientes. Gosto de aprender novas tecnologias e estou
-                sempre em busca de desafios que me ajudem a crescer como profissional.
-                <br>
-                Estou sempre em busca de novas oportunidades e colaborações para expandir meu aprendizado e contribuir
-                com projetos desafiadores. Se você está à procura de um desenvolvedor web comprometido e apaixonado por
-                tecnologia, ficarei muito feliz em conversar com você!
-            </p>
-        </section>
-        <nav id="contatos">
+        <div id="sobre">
+            <section class="sobre">
+                <h2 class="sobre-mim">Me conheça mais</h2>
+                <p class="texto-sobre-mim">Olá! Meu nome é João Luiz, e sou um desenvolvedor web apaixonado por criar   
+                    soluções modernas e funcionais. Possuo experiência sólida em HTML, CSS e JavaScript, o que me permite
+                    construir interfaces intuitivas, responsivas e focadas na experiência do usuário.
+                    <br>
+                    Atualmente, estou ampliando meus conhecimentos em Node.js, explorando o universo do desenvolvimento
+                    back-end para criar aplicações completas e eficientes. Gosto de aprender novas tecnologias e estou
+                    sempre em busca de desafios que me ajudem a crescer como profissional.
+                    <br>
+                    Estou sempre em busca de novas oportunidades e colaborações para expandir meu aprendizado e contribuir
+                    com projetos desafiadores. Se você está à procura de um desenvolvedor web comprometido e apaixonado por
+                    tecnologia, ficarei muito feliz em conversar com você!
+                </p>
+            </section>
+        </div>
+            
+            <nav id="contatos">
             <p>
                 <a href="https://www.linkedin.com/in/joao-luiz-francisco/"><img class="logo-linkedin"
                         src="src/img/logos/linkedin/LI-In-Bug.png"></a>
