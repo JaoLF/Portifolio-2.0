@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./src/styles/styles.css">
+    <script src="script/script.js"></script>
     <title>Portifólio de João Luiz</title>
 </head>
 
@@ -21,7 +22,14 @@
             </div>
 
             <nav class="links">
-                <a class="link" href="#contatos">Contatos</a>
+                <!-- <a class="link" href="#contatos">Contatos</a> -->
+                <a href="https://www.linkedin.com/in/joao-luiz-francisco/"><img class="logo-linkedin"
+                        src="src/img/logos/linkedin/LI-In-Bug.png"></a>
+
+                <a class="github" href="https://github.com/JaoLF"><img class="logo-github"
+                        src="./src/img/logos/github-mark/github-mark.png" alt="Logo GitHub"></a>
+
+
                 <a class="about" href="#sobre">Sobre</a>
             </nav>
         </header>
@@ -88,7 +96,7 @@
         <div id="sobre">
             <section class="sobre">
                 <h2 class="sobre-mim">Me conheça mais</h2>
-                <p class="texto-sobre-mim">Olá! Meu nome é João Luiz, e sou um desenvolvedor web apaixonado por criar
+                <p>Olá! Meu nome é João Luiz, e sou um desenvolvedor web apaixonado por criar
                     soluções modernas e funcionais. Possuo experiência sólida em HTML, CSS e JavaScript, o que me
                     permite
                     construir interfaces intuitivas, responsivas e focadas na experiência do usuário.
@@ -102,44 +110,17 @@
                     com projetos desafiadores. Se você está à procura de um desenvolvedor web comprometido e apaixonado
                     por
                     tecnologia, ficarei muito feliz em conversar com você!
-                </p>
+
+                <p id="dado"></p>
+                <button onclick="copyToClickBoard()" class="btn">@joaoluizfrancisco2002@gmail.com</button>
+                <br><br>
             </section>
         </div>
-
-        <nav id="contatos">
-            <p>
-                <a href="https://www.linkedin.com/in/joao-luiz-francisco/"><img class="logo-linkedin"
-                        src="src/img/logos/linkedin/LI-In-Bug.png"></a>
-
-                <a class="github" href="https://github.com/JaoLF"><img class="logo-github"
-                        src="./src/img/logos/github-mark/github-mark.png" alt="Logo GitHub"></a>
-
-            <p id="email">joaoluizfrancisco2002@gmail.com</p>
-            <button id="copiarEmail">Copiar Email</button>
-            </p>
-        </nav>
     </main>
 
-    <footer>
-        <p>Inspirado no portifólio de <a href="https://www.rammaheshwari.com/">Ram Maheshwari</a></p>
+    <footer class="footer">
+        <p>Inspirado no portifólio de <a class="link-footer" href="https://www.rammaheshwari.com/"><strong> Raw Maheshwari</strong></a></p>
     </footer>
-
-    <script>
-        document.getElementById("copiarEmail").addEventListener("click", function () {
-            const email = document.getElementById("email").textContent;
-            const tempInput = document.createElement("textarea");
-            tempInput.value = email;
-            document.body.appendChild(tempInput);
-            tempInput.select();
-            try {
-                document.execCommand("copy");
-                alert("Email copiado para a área de transferência!");
-            } catch (err) {
-                console.error("Erro ao copiar o email:", err);
-            }
-            document.body.removeChild(tempInput);
-        });
-    </script>
 </body>
 
 
